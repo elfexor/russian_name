@@ -44,5 +44,7 @@ names.many(amount, gender);
 
 Here's the full list of all available options:
 
-| amount | Amount of names to return | Integer |
+| Name | Description | Type |
+| ---- | ----------- | ---- |
 | gender | Limit results to the `male` or `female` gender | String |
+| amount | Amount of names to return (only .many method) | Integer |
