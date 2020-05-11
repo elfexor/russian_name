@@ -52,3 +52,8 @@ Here's the full list of all available options:
 | gender | Limit results to the `male` or `female` gender | String |
 | amount | Amount of names to return (only for .many method) | Integer |
 
+## Test
+
+```bash
+npm run test
+```
