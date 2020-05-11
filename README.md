@@ -1,23 +1,24 @@
-This package perfect for prototyping stuff or examples of real russian names nodeJS apps.
+This package perfect for prototyping stuff or examples of real russian names.
+
 
 ## Usage
 
 Install the package using [npm](https://www.npmjs.com) and save it to the dependency list:
 
 ```bash
-npm install --save russian-names
+npm install --save russian-name
 ```
 
 Usage example:
 
 ```js
-import names from 'russian_names';
+import name from 'russian_name';
 // or
-const names = require('russian_names');
+const name = require('russian_name');
 
-names.one('female');
+name.one('female');
 // or
-names.many(10, 'male');
+name.many(10, 'male');
 ```
 
 Result example:
@@ -40,8 +41,8 @@ Result example:
 ## Configuration
 
 ```js
-names.one(gender); 
-names.many(amount, gender);
+name.one(gender); 
+name.many(amount, gender);
 ```
 
 Here's the full list of all available options:
@@ -49,5 +50,5 @@ Here's the full list of all available options:
 | Name | Description | Type |
 | ---- | ----------- | ---- |
 | gender | Limit results to the `male` or `female` gender | String |
-| amount | Amount of names to return (only for .many() method) | Integer |
+| amount | Amount of names to return (only for .many method) | Integer |
 

@@ -1,6 +1,6 @@
 {
-  "name": "russian_names",
-  "version": "1.0.4",
+  "name": "russian_name",
+  "version": "1.0.1",
   "description": "Getting random Russian names",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elfexor/russian_names.git"
+    "url": "git+https://github.com/elfexor/russian_name.git"
   },
   "keywords": [
     "names",
@@ -18,7 +18,7 @@
   "author": "Vadim Konchik",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elfexor/russian_names/issues"
+    "url": "https://github.com/elfexor/russian_name/issues"
   },
-  "homepage": "https://github.com/elfexor/russian_names#readme"
+  "homepage": "https://github.com/elfexor/russian_name#readme"
 }

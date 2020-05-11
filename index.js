@@ -36,7 +36,7 @@ generate.many = (amount = 10, gender) => {
   let counter = 0, names = [];
 
   do {
-    names = [...names, generate(gender)]
+    names = [...names, generate(gender)];
     counter = counter + 1;
   } while (amount > counter);
 
@@ -45,5 +45,5 @@ generate.many = (amount = 10, gender) => {
 
 module.exports = {
   one: (gender = null) => generate(gender),
-  many: (amount, gender) => generate.many(amount, gender)
+  many: (amount, gender) => generate.many(amount, gender),
 }
