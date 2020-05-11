@@ -1,4 +1,4 @@
-This package perfect for prototyping stuff or examples of real russian names in production apps.
+This package perfect for prototyping stuff or examples of real russian names nodeJS apps.
 
 ## Usage
 
@@ -49,5 +49,5 @@ Here's the full list of all available options:
 | Name | Description | Type |
 | ---- | ----------- | ---- |
 | gender | Limit results to the `male` or `female` gender | String |
-| amount | Amount of names to return (only for .many method) | Integer |
+| amount | Amount of names to return (only for .many() method) | Integer |
 

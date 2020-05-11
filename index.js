@@ -11,19 +11,19 @@ const transliteration = (str) =>  {
   return str.replace(/[А-яёЁ]/g, replacer)
 }
 
-const generate = gender =>  {
+const generate = (gender) =>  {
   gender = ['male', 'female'].includes(gender) ? gender : ['male', 'female'][Math.round(Math.random())];
 
-  const name = gender === 'male' ? names_male[random(names_male.length)].name : names_female[random(names_female.length)].name
+  const name = gender === 'male' ? names_male[random(names_male.length)].name : names_female[random(names_female.length)].name;
   const surname = gender === 'male' ? surnames_male[random(surnames_male.length)].surname : surnames_female[random(surnames_female.length)].surname;
 
-  const fullname = `${name} ${surname}`
+  const fullname = `${name} ${surname}`;
 
   return {
-    gender,
     name,
     surname,
     fullname,
+    gender,
     transliteration: {
       name: transliteration(name),
       surname: transliteration(surname),
@@ -32,7 +32,18 @@ const generate = gender =>  {
   }
 }
 
+generate.many = (amount = 10, gender) => {
+  let counter = 0, names = [];
+
+  do {
+    names = [...names, generate(gender)]
+    counter = counter + 1;
+  } while (amount > counter);
+
+  return names;
+}
+
 module.exports = {
   one: (gender = null) => generate(gender),
-  many: (amount = 10, gender) => new Array(Number(amount)).fill('').map(_ => generate(gender))
+  many: (amount, gender) => generate.many(amount, gender)
 }
