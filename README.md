@@ -12,6 +12,8 @@ Usage example:
 
 ```js
 import names from 'russian_names';
+// or
+const names = require('russian_names');
 
 names.one('female');
 // or
@@ -31,7 +33,7 @@ Result example:
       "surname": "Mitronin",
       "fullname": "Evelyan Mitronin"
     }
-  }
+}
 
 ```
 
@@ -47,4 +49,5 @@ Here's the full list of all available options:
 | Name | Description | Type |
 | ---- | ----------- | ---- |
 | gender | Limit results to the `male` or `female` gender | String |
-| amount | Amount of names to return (only .many method) | Integer |
+| amount | Amount of names to return (only for .many method) | Integer |
+
