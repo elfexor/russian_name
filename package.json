@@ -1,6 +1,6 @@
 {
   "name": "russian_names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Getting random Russian names",
   "main": "index.js",
   "scripts": {
