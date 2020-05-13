@@ -13,8 +13,8 @@ const transliteration = (str) =>  {
 const create = (gender) =>  {
   gender = ['male', 'female'].includes(gender) ? gender : ['male', 'female'][Math.round(Math.random())];
 
-  const name = gender === 'male' ? names_male[random(names_male.length)].name : names_female[random(names_female.length)].name;
-  const surname = gender === 'male' ? surnames_male[random(surnames_male.length)].surname : surnames_female[random(surnames_female.length)].surname;
+  const name = gender === 'male' ? names_male[random(names_male.length - 1)].name : names_female[random(names_female.length - 1)].name;
+  const surname = gender === 'male' ? surnames_male[random(surnames_male.length - 1)].surname : surnames_female[random(surnames_female.length - 1)].surname;
 
   const fullname = `${name} ${surname}`;
 
