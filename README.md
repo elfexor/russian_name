@@ -6,7 +6,7 @@ This package perfect for prototyping stuff or examples of real russian names.
 Install the package using [npm](https://www.npmjs.com) and save it to the dependency list:
 
 ```bash
-npm install --save russian-name
+npm install --save russian_name
 ```
 
 Usage example:
