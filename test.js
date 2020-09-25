@@ -1,6 +1,7 @@
-const names = require('./index.js');
+const russianName = require('./lib/index.js');
 
-console.log(names.one('male'));
-console.log(names.one('female'));
-console.log(names.many(3, 'male'));
-console.log(names.many(15, 'female'));
+console.log(russianName.one('male'));
+console.log(russianName.one('female'));
+console.log(russianName.many(3, 'male'));
+
+console.log(russianName.many(15, 'female'));

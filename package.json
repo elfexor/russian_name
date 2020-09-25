@@ -1,10 +1,11 @@
 {
   "name": "russian_name",
-  "version": "1.1.4",
+  "version": "1.1.1",
   "description": "Getting random Russian names",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p .",
     "dev": "tsc --watch",
     "test": "node test.js"
   },
