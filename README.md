@@ -11,7 +11,7 @@ npm install --save russian_name
 Usage example:
 
 ```js
-import name from 'russian_name';
+import { russianName } from 'russian_name';
 // or
 const { russianName } = require('russian_name');
 
