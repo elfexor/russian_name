@@ -1,7 +1,7 @@
 type GenderType = 'male' | 'female';
 type NullableType<T> = T | null;
 
-interface NameInterface {
+export interface IRussianName {
   name: string;
   surname: string;
   fullname: string;
@@ -13,9 +13,9 @@ interface NameInterface {
   };
 }
 
-interface RussianNameInterface {
-  one(gender?: GenderType): NameInterface;
-  many(amount: number, gender?: GenderType): NameInterface[];
+interface IModuleRussianName {
+  one(gender?: GenderType): IRussianName;
+  many(amount: number, gender?: GenderType): IRussianName[];
   JSON: {
     male: {
       name: string;
@@ -116,7 +116,7 @@ const transliteration = (str: string): string => {
   return str.replace(/[А-яёЁ]/g, (character: string) => characters.get(character) || '');
 };
 
-const create = (gender?: NullableType<GenderType>): NameInterface => {
+const create = (gender?: NullableType<GenderType>): IRussianName => {
   let currentGender: GenderType;
 
   if (gender) {
@@ -155,9 +155,9 @@ const create = (gender?: NullableType<GenderType>): NameInterface => {
   };
 };
 
-const many = (amount: number = 10, gender?: GenderType): NameInterface[] => {
+const many = (amount: number = 10, gender?: GenderType): IRussianName[] => {
   let counter: number = 0;
-  let names: NameInterface[] = [];
+  let names: IRussianName[] = [];
 
   do {
     names = [...names, create(gender)];
@@ -167,7 +167,7 @@ const many = (amount: number = 10, gender?: GenderType): NameInterface[] => {
   return names;
 };
 
-const russianName: RussianNameInterface = {
+const russianName: IModuleRussianName = {
   one: (gender?: GenderType) => create(gender),
   many: (amount: number, gender?: GenderType) => many(amount, gender),
   JSON: {
@@ -182,4 +182,4 @@ const russianName: RussianNameInterface = {
   },
 };
 
-module.exports = russianName;
+export { russianName };

@@ -1,6 +1,5 @@
 declare type GenderType = 'male' | 'female';
-declare type NullableType<T> = T | null;
-interface NameInterface {
+export interface IRussianName {
     name: string;
     surname: string;
     fullname: string;
@@ -11,9 +10,9 @@ interface NameInterface {
         fullname: string;
     };
 }
-interface RussianNameInterface {
-    one(gender?: GenderType): NameInterface;
-    many(amount: number, gender?: GenderType): NameInterface[];
+interface IModuleRussianName {
+    one(gender?: GenderType): IRussianName;
+    many(amount: number, gender?: GenderType): IRussianName[];
     JSON: {
         male: {
             name: string;
@@ -25,15 +24,6 @@ interface RussianNameInterface {
         };
     };
 }
-declare const names_male: any;
-declare const names_female: any;
-declare const surnames_male: any;
-declare const surnames_female: any;
-declare const genders: ['male', 'female'];
-declare const getRandomGender: () => GenderType;
-declare const getRandomNumber: (max?: number) => number;
-declare const transliteration: (str: string) => string;
-declare const create: (gender?: "male" | "female" | null | undefined) => NameInterface;
-declare const many: (amount?: number, gender?: "male" | "female" | undefined) => NameInterface[];
-declare const russianName: RussianNameInterface;
+declare const russianName: IModuleRussianName;
+export { russianName };
 //# sourceMappingURL=index.d.ts.map
