@@ -1,9 +1,11 @@
 {
   "name": "russian_name",
-  "version": "1.0.4",
+  "version": "1.1.4",
   "description": "Getting random Russian names",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
     "test": "node test.js"
   },
   "repository": {
@@ -20,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/elfexor/russian_name/issues"
   },
-  "homepage": "https://github.com/elfexor/russian_name#readme"
+  "homepage": "https://github.com/elfexor/russian_name#readme",
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "typescript": "^4.0.3"
+  }
 }
