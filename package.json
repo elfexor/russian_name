@@ -1,6 +1,6 @@
 {
   "name": "russian_name",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Getting random Russian names",
   "main": "lib/index.js",
   "types": "lib",
@@ -27,5 +27,6 @@
   "devDependencies": {
     "@types/node": "^14.11.2",
     "typescript": "^4.0.3"
-  }
+  },
+  "dependencies": {}
 }
