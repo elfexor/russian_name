@@ -1,6 +1,5 @@
 This package perfect for prototyping stuff or examples of real russian names.
 
-
 ## Usage
 
 Install the package using [npm](https://www.npmjs.com) and save it to the dependency list:
@@ -14,7 +13,7 @@ Usage example:
 ```js
 import name from 'russian_name';
 // or
-const name = require('russian_name');
+const { russianName } = require('russian_name');
 
 name.one('female');
 // or
