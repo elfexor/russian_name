@@ -15,9 +15,9 @@ import { russianName } from 'russian_name';
 // or
 const { russianName } = require('russian_name');
 
-name.one('female');
+russianName.one('female');
 // or
-name.many(10, 'male');
+russianName.many(10, 'male');
 ```
 
 Result example:
@@ -40,8 +40,8 @@ Result example:
 ## Configuration
 
 ```js
-name.one(gender); 
-name.many(amount, gender);
+russianName.one(gender); 
+russianName.many(amount, gender);
 ```
 
 Here's the full list of all available options:
